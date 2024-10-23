@@ -1,68 +1,62 @@
-# Retail_Turnover_prediction_model
+## Retail_Turnover_prediction_model
 Machine Learning Project
 
-# Project4-Group6
-Data Analytics Boot Camp - Group Projects
+### Project Proposal
+Forecasting Turnover in the Australian Retail Sector using Machine Learning
 
-## Project Proposal: Retail Trade Turnover Analysis
-## Project Title:
-Forecasting Retail Trade Turnover using Machine Learning
+### Group-6 Members
+ - Monica
+ - Khushi
+ - Napat
+ - Greg
 
-## Objective:
-The primary objective of this project is to develop a predictive model that forecasts retail trade turnover across various categories (Food retailing, Household goods retailing, Clothing, Department stores, and Cafes/Restaurants). This will enable stakeholders to make informed decisions regarding inventory management, marketing strategies, and resource allocation based on expected turnover trends.
+## Introduction
 
-Machine Learning Problems Addressed:
-Sales Forecasting: Predict future turnover for each retail category based on historical data.
-Trend Analysis: Identify trends and seasonality in turnover data to help businesses understand market dynamics.
+In the fast-paced retail environment, understanding sales trends and accurately forecasting
+future turnover is critical for business success. This project aims to utilize machine learning
+techniques on the Retail Trade, Australia dataset to predict future turnover, providing insights that
+can enhance decision-making for inventory management, marketing strategies, and overall
+business planning.
 
-Machine Learning Algorithms:
-Time Series Forecasting Models:
-ARIMA (AutoRegressive Integrated Moving Average): Suitable for univariate time series data.
-SARIMA (Seasonal ARIMA): Incorporates seasonality in the data, making it suitable for retail turnover which often exhibits seasonal patterns.
-Regression Models:
+## Objectives
+- To analyze historical turnover data to identify trends in the Australian retail sector
+- To develop a machine learning model and use that to forecast turnover across the Australian Bureau of Statistics (ABS) categories for the dataset.
+- To visualize and interpret the results for actionable insights that can inform retail strategies.
 
-Linear Regression: To explore relationships between different categories of turnover and predict future values.
-Random Forest Regression: Can capture non-linear relationships and interactions between features effectively.
+## Dataset
 
-Data Preprocessing Steps:
-Data Cleaning: Handle missing values and outliers.
-Feature Engineering: Create lag features and moving averages to enhance predictive power.
-Normalization/Scaling: Normalize turnover values for better model performance.
+- https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release
+- In particular, the "Table 1. Retail turnover, by industry group" dataset in that release.
+    - Refer to the data downloads page: https://www.abs.gov.au/statistics/industry/retail-and-wholesale-trade/retail-trade-australia/latest-release#data-downloads 
+- The ABS Retail Turnover categories are:
+    - Cafes, restaurants and takeaway food services
+    - Clothing, footwear and personal accessory retailing
+    - Department stores
+    - Food retailing
+    - Household goods retailing
+    - Other retailing
 
-Agile Process for 2 Weeks:
-Sprint 1 (Week 1):
+## Methodology
 
-Day 1-2: Data Collection and Exploration
-Gather and inspect the dataset.
-Understand data structure and distribution.
+1. Data Collection
+- Obtain the Retail Trade dataset from the Australian Bureau of Statistics or relevant
+data repositories.
+2. Data Preparation
+- Load the Data: Utilize Python's Pandas library to load and inspect the dataset.
+3. Data Cleaning:
+- Handle missing values, remove duplicates, and address outliers
+4. Machine Learning:
+- Split the data into training and testing subsets
+- Choose appropriate ML models e.g. Random Forest Regression and Neural Prophet
+5. Presentation:
+- Plot results using Matplotlib
+- Provide user interaction via queryable API and/or web application.
 
-Day 3-4: Data Preprocessing
-Clean the data (handle missing values, remove duplicates).
-Perform feature engineering (create relevant features).
+## Expected Outcomes
+- A trained predictive model capable of accurately forecasting retail turnover.
+- Visualizations that convey findings to stakeholders for informed decision-making.
 
-Day 5: Model Selection
-Decide on the forecasting methods (e.g., ARIMA, Random Forest).
-Split the data into training and testing sets.
-Sprint 2 (Week 2):
-
-Day 6-7: Model Training
-
-Train selected models on the training dataset.
-Optimize hyperparameters using cross-validation.
-
-Day 8: Model Evaluation
-Evaluate model performance using metrics like RMSE, MAE, and R-squared.
-Compare results from different models.
-
-Day 9: Insights and Visualization
-Visualize trends and forecasts.
-Generate reports for stakeholders.
-
-Day 10: Review and Next Steps
-Present findings to stakeholders.
-Gather feedback and discuss potential next steps for deployment or further analysis.
-
-Conclusion:
-By implementing this project, we aim to create a robust forecasting model that helps stakeholders understand retail turnover trends. This will enhance decision-making processes and optimize retail strategies. The agile process will ensure timely delivery and adaptability based on feedback throughout the two-week project timeline.
-
-
+## Tools and Technologies
+- Programming Language: Python
+- Libraries: Pandas, Matplotlib, Scikit-learn
+- Data Storage: CSV or SQL database for handling data
